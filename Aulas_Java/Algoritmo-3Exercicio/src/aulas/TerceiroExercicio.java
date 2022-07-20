@@ -44,8 +44,7 @@ public class TerceiroExercicio {
 		
 		System.out.print("A media bimestral é: " + media + "\n");
 		
-		//Faça um Programa que pergunte quanto você ganha por hora e o número de 
-		//horas trabalhadas no mês. Calcule e mostre o total do seu salário no referido mês.
+		//Faça um Programa que pergunte quanto você ganha por hora e o número de horas trabalhadas no mês. Calcule e mostre o total do seu salário no referido mês.
 		double salarioHora, horasTrabalhadas, salarioFinal;
 		salarioHora = 0.0;
 		horasTrabalhadas = 0.0;
@@ -60,10 +59,11 @@ public class TerceiroExercicio {
 		
 		System.out.print("O valor do salario final é R$ " + salarioFinal + " reais.\n");
 		
-		//•Faça um Programa que peça a temperatura em graus Fahrenheit, transforme e mostre a
-		//temperatura em graus Celsius. •C = 5 * ((F-32) / 9).
+		//•Faça um Programa que peça a temperatura em graus Fahrenheit, transforme e mostre a temperatura em graus Celsius. •C = 5 * ((F-32) / 9).
 		
 		double celsius, fahrenheit;
+		celsius = 0.0;
+		fahrenheit = 0.0;
 		
 		System.out.print("\n" + "Insira a temperatura em Fahrenheit: ");
 		fahrenheit = leia.nextDouble();
