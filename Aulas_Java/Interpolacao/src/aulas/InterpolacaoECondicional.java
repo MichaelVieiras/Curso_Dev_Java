@@ -13,13 +13,6 @@ public class InterpolacaoECondicional {
 		System.out.printf("%s tem %d anos e ganha %.2f, sexo: %c", nome, idade, salario, sexo);
 		*/
 		
-		int a = 10;
-		int b = 20;
-		int c = 10;
-		double d = 10.0;
-		
-		boolean v = true;
-		boolean f = false;
 		
 		System.out.println("##########################################");
 		System.out.println("##   &&(E)     ##   ||(OU)    ##   !    ##");
@@ -29,11 +22,7 @@ public class InterpolacaoECondicional {
 		System.out.println("## F  | F => F ## F  | F => F ##        ##");
 		System.out.println("##########################################");
 		
-		if (a == c && b == a) {
-			System.out.println("Sim!");
-		}else {
-			System.out.println("Não!");
-		}
+		System.out.print();
 		
 		
 	}
