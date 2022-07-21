@@ -6,10 +6,7 @@ import java.util.Scanner;
 public class TerceiroExercicio {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 		
-		/*
-		*/
 		Scanner leia = new Scanner(System.in).useLocale(Locale.US);
 		
 		//Faça um Programa que peça dois números e imprima a soma;
@@ -63,7 +60,7 @@ public class TerceiroExercicio {
 		
 		double celsius, fahrenheit;
 		celsius = 0.0;
-		fahrenheit = 0.0;
+		fahrenheit = 0;
 		
 		System.out.print("\n" + "Insira a temperatura em Fahrenheit: ");
 		fahrenheit = leia.nextDouble();
@@ -71,6 +68,10 @@ public class TerceiroExercicio {
 		celsius = (fahrenheit - 32) * 5 / 9;
 		
 		System.out.print("A temperatura em graus Celsius é: " + celsius + "º.");
+	
+		System.out.printf("\nA temperatura em graus Celsius é: %.2f", celsius);
+		
+		leia.close();
 	}
 
 }
