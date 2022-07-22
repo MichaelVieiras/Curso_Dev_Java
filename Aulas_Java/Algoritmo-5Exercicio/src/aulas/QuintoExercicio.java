@@ -9,8 +9,8 @@ public class QuintoExercicio {
 		
 		Scanner scan = new Scanner(System.in).useLocale(Locale.US);
 		
-		//exercícios if/else{
-		//1)Faça um programa que peça o nome e a senha e faça a verificação de uma variável que obtenha a senha e o usuário (como se fosse cadastrado) e retorne erro caso a senha ou o usuário esteja errado. A mensagem a ser mostrada deve ser de acordo com o respectivo erro!
+		/*exercícios if/else{
+		1)Faça um programa que peça o nome e a senha e faça a verificação de uma variável que obtenha a senha e o usuário (como se fosse cadastrado) e retorne erro caso a senha ou o usuário esteja errado. A mensagem a ser mostrada deve ser de acordo com o respectivo erro!*/
 		/*
 		String nome;
 		String nomeCadastrado;
@@ -43,7 +43,7 @@ public class QuintoExercicio {
 		*/
 		
 
-		//2)Peça para o usuário inserir o valor do seu salario bruto e faça o desconto de 5% do IRPF, e 11 % do INSS e mostre o salario liquido. Se o salario liquido for menor que 1200,00 o profissional receberá 5% a mais de bônus, se o salario liquido ultrapassar 3500,00 o funcionario recebera 2% a mais de bônus. }
+		/*2)Peça para o usuário inserir o valor do seu salario bruto e faça o desconto de 5% do IRPF, e 11 % do INSS e mostre o salario liquido. Se o salario liquido for menor que 1200,00 o profissional receberá 5% a mais de bônus, se o salario liquido ultrapassar 3500,00 o funcionario recebera 2% a mais de bônus. }*/
 		
 		/*double salarioBruto = 0;
 		double descontoIrpf = 0;
@@ -77,8 +77,7 @@ public class QuintoExercicio {
 		
 
 		/*Exercício Switch/Case{
-		3)Faça um programa que peça ao usuário para escolher o item de um menu e a quantidade:
-		(apenas 1 item)
+		3)Faça um programa que peça ao usuário para escolher o item de um menu e a quantidade: (apenas 1 item)
 
 		1 - sanduiche natureba
 		2 - Sanduba Bomba
