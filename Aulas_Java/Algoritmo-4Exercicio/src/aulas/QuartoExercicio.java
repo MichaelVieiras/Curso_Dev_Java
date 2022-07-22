@@ -19,7 +19,7 @@ public class QuartoExercicio {
 		System.out.print("Digite o segundo número: ");
 		num2 = scan.nextDouble();
 		
-		if (num1 >= num2) {
+		if (num1 > num2) {
 			System.out.println("O número maior é o: " + num1);
 		}else {
 			System.out.println("O número maior é o: " + num2 + "\n");
@@ -39,9 +39,9 @@ public class QuartoExercicio {
 		System.out.print("Digite o terceiro número: ");
 		valor3 = scan.nextDouble();
 		
-		if (valor1 >= valor2 && valor1 >= valor3) {
+		if (valor1 > valor2 && valor1 > valor3) {
 			System.out.println("O número maior é o: " + valor1);
-		}else if (valor2 >= valor1 && valor2 >= valor3){
+		}else if (valor2 > valor1 && valor2 > valor3){
 			System.out.println("O número maior é o: " + valor2);
 		}else {
 			System.out.println("O número maior é o: " + valor3);
