@@ -22,7 +22,6 @@ public class InterpolacaoECondicional {
 		System.out.println("## F  | F => F ## F  | F => F ##        ##");
 		System.out.println("##########################################");
 		
-		System.out.print();
 		
 		
 	}
