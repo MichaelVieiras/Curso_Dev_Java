@@ -61,7 +61,7 @@ public class SextoExercicio {
 		E.Estado Civil: 
 		's', 'c', 'v', ‘d’;*/
 		
-		String nome;
+		/*String nome;
 		int idade = 0;
 		double salario = 0;
 		char sexo = 0;
@@ -108,7 +108,7 @@ public class SextoExercicio {
 		}
 		System.out.println("Formulario preenchido com sucesso!!!");
 		System.out.printf("\nNome: " + nome + " | Idade: " + idade + "anos | Sexo: " + sexo +  " | Estado Civil: " + estadoCivil + " | Salario R$: " + salario + " reais");
-		
+		*/
 		scan.close();
 	}
 
