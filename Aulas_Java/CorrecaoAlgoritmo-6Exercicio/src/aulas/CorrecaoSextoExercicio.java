@@ -78,7 +78,7 @@ public class CorrecaoSextoExercicio {
 		}
 		System.out.print("Digite seu estado civil (s > Solteiro(a), c > Casado(a), v > Viuvo(a), d > Divorciado(a): ");
 		estadoCivil = scan.next().charAt(0);
-		while(Character.toUpperCase(estadoCivil) != 'S' || Character.toUpperCase(estadoCivil) != 'C' || Character.toUpperCase(estadoCivil) != 'V' || Character.toUpperCase(estadoCivil) != 'D') {
+		while(Character.toUpperCase(estadoCivil) != 'S' && Character.toUpperCase(estadoCivil) != 'C' && Character.toUpperCase(estadoCivil) != 'V' && Character.toUpperCase(estadoCivil) != 'D') {
 			System.out.println("Insira os dados conforme solicitado acima!");
 			System.out.print("Digite seu estado civil (s > Solteiro(a), c > Casado(a), v > Viuvo(a), d > Divorciado(a): ");
 			estadoCivil = scan.next().charAt(0);
