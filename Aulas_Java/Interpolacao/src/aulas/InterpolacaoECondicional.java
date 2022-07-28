@@ -13,7 +13,7 @@ public class InterpolacaoECondicional {
 		double salario = 1500.00;
 		char sexo = 'M';
 		
-		// %s => String, %d => int ou double, %.2f => formatação (double e float), %c => char
+		// %s => String, %d => int, %.2f => formatação (double e float), %c => char
 		System.out.printf("%s tem %d anos e ganha %.2f, sexo: %c", nome, idade, salario, sexo);
 		*/
 		
