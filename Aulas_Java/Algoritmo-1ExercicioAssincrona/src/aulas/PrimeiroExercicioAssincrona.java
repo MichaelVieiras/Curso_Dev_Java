@@ -22,7 +22,7 @@ public class PrimeiroExercicioAssincrona {
 		 * essa atividade.
 		 */
 
-		int votoBranco, votoNulo, lulaMolusco, bolsoNelson, ciloucaGomes, bolosBolinho;
+		/*int votoBranco, votoNulo, lulaMolusco, bolsoNelson, ciloucaGomes, bolosBolinho;
 		votoBranco = votoNulo = lulaMolusco = bolsoNelson = ciloucaGomes = bolosBolinho = 0;
 		int numCandidato = 0;
 		int qtdEleitores = 0;
@@ -87,14 +87,14 @@ public class PrimeiroExercicioAssincrona {
 
 		} else {
 			System.out.println("Votação não iniciada");
-		}
-		/*
+		}*/
+
 		int votoBranco, votoNulo, lulaMolusco, bolsoNelson, ciloucaGomes, bolosBolinho;
 		votoBranco = votoNulo = lulaMolusco = bolsoNelson = ciloucaGomes = bolosBolinho = 0;
 		int numCandidato = 0;
 		String contVotacao;
 		String iniciarVotacao;
-		
+
 		System.out.println("Dados Incertos: Jornal da Meia Noite ou Meio Dia");
 		System.out.println("####Pesquisa intenção de Votos Eleições 2022####\n");
 
@@ -145,17 +145,16 @@ public class PrimeiroExercicioAssincrona {
 				contVotacao = scan.nextLine();
 				if (contVotacao.equals("1")) {
 					System.out.println("\nContinuando Votação!");
-				}else if (contVotacao.equals("2")){
+				} else if (contVotacao.equals("2")) {
 					System.out.println("\nFinalizando Votação!");
-				}
-				else {
+				} else {
 					while (contVotacao != ("1") || contVotacao != ("2")) {
 						System.out.print("\nContinuar Votação 1-SIM ou 2-NÃO: ");
-						contVotacao = scan.nextLine();	
+						contVotacao = scan.nextLine();
 						if (contVotacao.equals("1") || contVotacao.equals("2")) {
 							break;
 						}
-					}					
+					}
 				}
 			} while (contVotacao.equals("1") || contVotacao.equals("SIM") || contVotacao.equals("sim")
 					|| contVotacao.equals("s") || contVotacao.equals("S"));
@@ -168,10 +167,10 @@ public class PrimeiroExercicioAssincrona {
 			System.out.printf("## 0 - Voto em Branco: %d ##\n", votoBranco);
 			System.out.printf("##     Voto Nulo: %d      ##\n", votoNulo);
 			System.out.println("###########################");
-		}else {
+		} else {
 			System.out.println("Votação não iniciada");
 		}
-		*/
+
 		scan.close();
 	}
 
