@@ -9,7 +9,7 @@ public class TestesDiversos {
 
 		Scanner scan = new Scanner(System.in).useLocale(Locale.US);
 		
-		int votoBranco, votoNulo, lulaMolusco, bolsoNelson, ciloucaGomes, bolosBolinho;
+		/*int votoBranco, votoNulo, lulaMolusco, bolsoNelson, ciloucaGomes, bolosBolinho;
 		votoBranco = votoNulo = lulaMolusco = bolsoNelson = ciloucaGomes = bolosBolinho = 0;
 		int numCandidato = 0;
 		String contVotacao;
@@ -90,7 +90,9 @@ public class TestesDiversos {
 			System.out.println("###########################");
 		}else {
 			System.out.println("Votação não iniciada");
-		}
+		}*/
+		
+		
 		
 		scan.close();
 	}
