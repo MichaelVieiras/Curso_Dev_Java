@@ -1,5 +1,6 @@
 package aulas;
 
+import java.util.ArrayList;
 import java.util.Locale;
 import java.util.Scanner;
 
@@ -91,9 +92,45 @@ public class TestesDiversos {
 		}else {
 			System.out.println("Votação não iniciada");
 		}*/
+	
 		
 		
+		/*double[] notas = new double[4];
+		double media = 0;
 		
+		for(int i = 0 ; i < 4; i++) {
+			System.out.printf("Digite a %dª nota: ", (i+1));
+			notas[i] = scan.nextDouble();
+		}
+		for (double nota : notas) {
+			System.out.print(nota + ", ");
+		}
+			
+		media = (notas[0] + notas[1] + notas [2] + notas[3]) / 4;
+		System.out.printf("\n %.2f é o valor da media das notas.", media);*/
+
+		/*int contador = 0;
+		int contador2 = 0;
+		
+		for(int i = 0 ; i < 5; i++) {
+			System.out.println("O i agora valendo " + i);
+			contador++;
+			System.out.println("O contador agora está valendo " + contador);	
+			contador2 = contador2 + 1;
+			System.out.println("O contador2 agora está valendo " + contador2);
+		}*/
+		
+		ArrayList<String> lista = new ArrayList<>();
+		lista.add("Luan");
+		lista.add("Weslei");
+		lista.add("Adrielly");
+		lista.add("Gabriel");
+		
+		System.out.println(lista.get(2));
+		
+		for(String nomesNaLista : lista) {
+			System.out.println("\n" + nomesNaLista);
+		}
 		scan.close();
 	}
 
