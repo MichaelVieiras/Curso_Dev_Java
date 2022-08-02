@@ -11,7 +11,7 @@ public class OitavoExercicio {
 		
 		/*1. Crie um programa para receber os dados de uma pessoa (altura, peso, idade e sexo), imprima na tela seu imc e se está dentro do peso ideal, sobrepeso ou abaixo do peso;*/
 
-		String nome;
+		/*String nome;
 		int idade = 0;
 		double altura = 0;
 		double peso = 0;
@@ -58,12 +58,12 @@ public class OitavoExercicio {
 		}else {
 			System.out.printf("Seu IMC é %.2f", CalcularIMC(peso, altura));
 			System.out.printf("\n%s do sexo %c tem %d anos, mede %.2f metros, pesa %.2f Kg e está com com Obesidade Grau 3.", nome, sexo, idade, altura, peso);
-		}
+		}*/
 		
 		
 		/*2. Crie um programa que receba o valor da gasolina e do álcool, e retorno para o usuário qual está compensando mais utilizar;*/
 		
-		double gasolina = 0;
+		/*double gasolina = 0;
 		double alcool = 0;
 		
 		System.out.println("\n\nO cálculo básico para se descobrir se o álcool é vantajoso ou não em relação à gasolina é simples. Basta dividir o preço do litro do álcool pelo da gasolina. Se o resultado for inferior a 0,7, use álcool. Se for maior que 0,7, então a gasolina é melhor.\n");
@@ -72,7 +72,7 @@ public class OitavoExercicio {
 		System.out.print("Digite o valor da Gasolina R$: ");
 		gasolina = scan.nextDouble();
 		
-		CombustivelComp(gasolina, alcool);
+		CombustivelComp(gasolina, alcool);*/
 		
 		/*3. Crie um programa para calcular a formula do segundo grau, retorne valor de xI e xII;*/
 		double a = 0;
@@ -122,31 +122,39 @@ public class OitavoExercicio {
 	public static double EquacaoSegundoGrau(double a, double b, double c) {
 		
 		double solucao = 0;
-		double elevacao = 2;
+		//double elevacao = 2; 
 		
 		//calcular o valor de DELTA
-		double delta = (double) (Math.pow(b, elevacao) - 4 * a * c);
+		//double delta = (Math.pow(b, elevacao) - 4 * a * c);
+		
+		double delta = (double) (Math.pow(b, 2) - 4 * a * c);
 		
 		//calcular o valor da raiz quadrada de DELTA
-		double raizdelta = (double) Math.sqrt(delta);
+		//double raizdelta = Math.sqrt(delta);
 		
 		//calcular o valor de xI e xII
-		double xI = (-b + raizdelta) / (2 * a);
-		double xII = (-b - raizdelta) / (2 * a); 
+		//double xI = (-b + raizdelta) / (2 * a);
+		//double xII = (-b - raizdelta) / (2 * a); 
+		
+		double xI = (-b + Math.sqrt(delta)) / (2 * a);
+		double xII = (-b - Math.sqrt(delta)) / (2 * a);
 		
 		//verificando se a equação é igual a 0
-		double resultado = (double) (a * Math.pow(xII, elevacao) + b * xII + c);
-		double resultado2 = (double) (a * Math.pow(xII, elevacao) + b * xII + c);
+		//double resultado = (a * Math.pow(xII, elevacao) + b * xII + c);
+		//double resultado2 = (a * Math.pow(xII, elevacao) + b * xII + c);
+		
+		double resultado = (double) (a * Math.pow(xII, 2) + b * xII + c);
+		double resultado2 = (double) (a * Math.pow(xII, 2) + b * xII + c);
 		
 		System.out.println("\nO valor de DELTA é : " + delta);
-		System.out.printf("Solução para essa equação é: {%.2f, %.2f}.", xI, xII);
+		System.out.printf("Solução para essa equação é: {%.1f , %.1f}.", xI, xII);
 		
 		if (resultado != 0 || resultado2 != 0) {
 			System.out.println("\nO resultado dessa equação é diferente de zero, portanto, está incorreta.");
 			return solucao;
 		}else {
-		System.out.printf("\nUtilizando X = %.2f, o resultado da Equação de Segundo Grau é igual a: %.2f", xI, resultado);
-		System.out.printf("\nUtilizando X = %.2f, o resultado da Equação de Segundo Grau é igual a: %.2f", xII, resultado2);
+		System.out.printf("\nUtilizando X = %.2f, o resultado da Equação de Segundo Grau é igual a: %.1f", xI, resultado);
+		System.out.printf("\nUtilizando X = %.2f, o resultado da Equação de Segundo Grau é igual a: %.1f", xII, resultado2);
 		}
 		return solucao;
 		
