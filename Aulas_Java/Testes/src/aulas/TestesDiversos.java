@@ -120,7 +120,7 @@ public class TestesDiversos {
 			System.out.println("O contador2 agora está valendo " + contador2);
 		}*/
 		
-		ArrayList<String> lista = new ArrayList<>();
+		/*ArrayList<String> lista = new ArrayList<>();
 		lista.add("Luan");
 		lista.add("Weslei");
 		lista.add("Adrielly");
@@ -130,8 +130,88 @@ public class TestesDiversos {
 		
 		for(String nomesNaLista : lista) {
 			System.out.println("\n" + nomesNaLista);
+		}*/
+		/*double a = 0;
+		double b = 0;
+		double c = 0;
+		
+		System.out.println("\n\nRepresentação da equação de segundo grau: ax² + bx + c = 0.");
+		System.out.print("Digite o valor de A: ");
+		a = scan.nextDouble();
+		System.out.print("Digite o valor de B: ");
+		b = scan.nextDouble();
+		System.out.print("Digite o valor de C: ");
+		c = scan.nextDouble();
+		
+		System.out.println(Delta(a, b, c));
+		System.out.println(X1(a, b, c));
+		System.out.println(X2(a, b, c));
+		
+		scan.close();*/
+	/*}
+	public static double Delta(double a, double b, double c) {
+		return (double) Math.pow(b, 2) - 4 * a * c;
+	}*/
+	/*public static double X1(double a, double b, double c) {
+		if(Delta(a, b, c) < 0) {
+			return 0.0;
+		}else {
+			return (-b + Math.sqrt(Delta(a, b, c))) / (2 * a);
+		}		
+	}*/
+	/*public static double X2(double a, double b, double c) {		
+		if(Delta(a, b, c) < 0) {
+			return 0.0;
+		}else {
+			return (-b - Math.sqrt(Delta(a, b, c))) / (2 * a);
 		}
-		scan.close();
-	}
+	}*/
+	
+	Scanner sc = new Scanner(System.in).useLocale(Locale.US);
 
+	double a = 0.0;
+	double b = 0.0;
+	double c = 0.0;
+
+	System.out.print("Entre com o valor de A: ");
+	a = sc.nextDouble();
+	System.out.print("Entre com o valor de B: ");
+	b = sc.nextDouble();
+	System.out.print("Entre com o valor de C: ");
+	c = sc.nextDouble();
+
+	FsegundoGrau(a, b, c);
+
+	sc.close();
+
+}
+
+	public static void FsegundoGrau(double a, double b, double c) {
+		
+		double delta = (Math.pow(b, 2)) - (4 * (a * c));
+		double x1 = 0.0;
+		double x2 = 0.0;
+		
+		if(delta < 0) {
+			System.out.println("Delta não tem raiz");
+		}else {
+			x1 = (-b + Math.sqrt(delta)) / (2 * a);
+			x2 = (-b - Math.sqrt(delta)) / (2 * a);
+		}
+		
+		System.out.printf("Delta está valendo: %.2f", delta);
+		System.out.printf("\nx1 está valendo: %.2f", x1);
+		System.out.printf("\nx2 está valendo: %.2f", x2);
+		
+		double verificao1 = (a * Math.pow(x1, 2) + b * x1 + c);
+		double verificao2 = (a * Math.pow(x2, 2) + b * x2 + c);
+		if (verificao1 != 0 || verificao2 != 0) {
+			System.out.printf("\n\n%.0fx² + %.0fx + %.0f = 0", a, b, c);
+			System.out.println("\n\nEssa equação está incorreta!");
+		}else {
+			System.out.printf("\n\n%.0fx² + %.0fx + %.0f = 0", a, b, c);
+			System.out.printf("\n\nUtilizando X = %.2f, o resultado da Equação de Segundo Grau é igual a: %.2f", x1, verificao1);
+			System.out.printf("\nUtilizando X = %.2f, o resultado da Equação de Segundo Grau é igual a: %.2f", x2, verificao2);
+		}
+	}
 }
