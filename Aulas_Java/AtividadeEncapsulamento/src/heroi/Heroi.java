@@ -1,5 +1,6 @@
 package heroi;
 
+
 public class Heroi {
 
 	private String identidadeSecreta;
@@ -15,6 +16,10 @@ public class Heroi {
 	
 	public Heroi() {
 		
+	}
+
+	public void IdentidadeSecreta() {
+		identidadeSecreta += identidadeSecreta;
 	}
 
 	public String getIdentidadeSecreta() {
@@ -100,6 +105,6 @@ public class Heroi {
 	@Override
 	public String toString() {
 
-		return "Vilão: " + nomeDeHeroi + "\nUniverso: " + universoPertence + "\nPlaneta Natal: " + planetaNatal   + "\nGrupo: " + pertenceAoGrupoLiga + "\nIdade: " + idade  /*+ "\nEsta Ativo: " + estaNaAtiva*/;
+		return "Vilão: " + this.nomeDeHeroi + "\nUniverso: " + this.universoPertence + "\nPlaneta Natal: " + this.planetaNatal   + "\nGrupo: " + this.pertenceAoGrupoLiga + "\nIdade: " + this.idade  /*+ "\nEsta Ativo: " + estaNaAtiva*/;
 	}
 }
