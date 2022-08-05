@@ -9,6 +9,18 @@ public class Produto {
 	public Produto() {	
 	}
 	
+	public void AdicionarItem(int qtd) {
+		quantidade += qtd;
+	}
+	
+	public void RemoverItem(int qtd) {
+		quantidade -= qtd;
+	}
+	
+	public double ValorTotalEmEstoque() {
+		return quantidade * valor;
+	}
+	
 	public String getNomeProduto() {
 		return nomeProduto;
 	}
@@ -33,17 +45,7 @@ public class Produto {
 		this.valor = valor;
 	}
 	
-	public void AdicionarItem(int qtd) {
-		quantidade += qtd;
-	}
 	
-	public void RemoverItem(int qtd) {
-		quantidade -= qtd;
-	}
-	
-	public double ValorTotalEmEstoque() {
-		return quantidade * valor;
-	}
 	
 	
 	@Override
