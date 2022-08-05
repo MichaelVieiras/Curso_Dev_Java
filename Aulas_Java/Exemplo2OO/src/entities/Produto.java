@@ -6,9 +6,9 @@ public class Produto {
 	public int quantidade; //é de boa pratica inicializar a variavel
 	public double valor;
 	
-	/*public void Estoque() {
+	public void Estoque() {
 		System.out.printf("Temos em estoque: %.2f ", valor * quantidade);
-	}*/
+	}
 	
 	@Override
 	public String toString() {
