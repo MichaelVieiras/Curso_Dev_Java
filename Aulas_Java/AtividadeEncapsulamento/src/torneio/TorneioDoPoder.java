@@ -4,11 +4,16 @@ import java.util.Locale;
 import java.util.Scanner;
 
 import heroi.Heroi;
+
 import vilao.Vilao;
+
 
 public class TorneioDoPoder {
 
 	public static void main(String[] args) {
+		
+		
+
 		Scanner scan = new Scanner(System.in).useLocale(Locale.US);
 		Heroi heroi = new Heroi();
 		Vilao vilao = new Vilao();
@@ -28,12 +33,14 @@ public class TorneioDoPoder {
 		
 		Cadastro(cadastro);
 		
+		
 		scan.close();
 	}
-	public static void Cadastro(int cadastro) {
+	public static  void Cadastro(int cadastro) {
 		Scanner scan = new Scanner(System.in).useLocale(Locale.US);
-		Heroi heroi = new Heroi();
-		Vilao vilao = new Vilao();
+		Heroi heroi = new Heroi();        
+        Vilao vilao = new Vilao();
+        
 		for (int i = 0; i < 2; i++) {
 			if (cadastro == 1) {
 				System.out.println("Deseja iniciar o cadastro do (1 - Herói) ou (2 - Vilão): ");
@@ -138,7 +145,7 @@ public class TorneioDoPoder {
 		
 		System.out.println("Grupo dos Heróis: ");
 		System.out.println(heroi);
-		
+
 		scan.close();
 	}
 	
