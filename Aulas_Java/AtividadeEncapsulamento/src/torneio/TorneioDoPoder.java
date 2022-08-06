@@ -33,6 +33,8 @@ public class TorneioDoPoder {
 		
 		Cadastro(cadastro);
 		
+		System.out.println("Primeira Luta");
+		
 		
 		scan.close();
 	}
@@ -140,11 +142,13 @@ public class TorneioDoPoder {
 			}
 		}	
 		
-		System.out.println("Grupo dos Vilões: ");
+		System.out.println("\nGrupo dos Vilões: ");
 		System.out.println(vilao);
 		
-		System.out.println("Grupo dos Heróis: ");
+		System.out.println("\nGrupo dos Heróis: ");
 		System.out.println(heroi);
+		
+		
 
 		scan.close();
 	}
