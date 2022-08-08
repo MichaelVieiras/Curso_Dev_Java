@@ -7,14 +7,16 @@ import heroi.Heroi;
 import vilao.Vilao;
 
 public class Cadastro {
-	Scanner scan = new Scanner(System.in).useLocale(Locale.US);
-	Heroi heroi = new Heroi();
-	Vilao vilao = new Vilao();
+	
+	
+	
 	public int cadastro;
-	public String ficha;
+	
 
-	public Cadastro() {
-
+	public void Cadastro(int cadastro) {
+		Scanner scan = new Scanner(System.in).useLocale(Locale.US);
+		Heroi heroi = new Heroi();
+		Vilao vilao = new Vilao();
 		for (int i = 0; i < 2; i++) {
 			if (cadastro == 1) {
 				System.out.println("Deseja iniciar o cadastro do (1 - Herói) ou (2 - Vilão): ");
@@ -112,22 +114,6 @@ public class Cadastro {
 		}
 		scan.close();
 
-	}
-
-	public int getCadastro() {
-		return cadastro;
-	}
-
-	public void setCadastro(int cadastro) {
-		this.cadastro = cadastro;
-	}
-
-	public String getFicha() {
-		return ficha;
-	}
-
-	public void setFicha(String ficha) {
-		this.ficha = ficha;
 	}
 
 }
