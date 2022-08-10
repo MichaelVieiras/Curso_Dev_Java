@@ -1,10 +1,7 @@
-package cadastro;
+package entities;
 
 import java.util.Locale;
 import java.util.Scanner;
-
-import heroi.Heroi;
-import vilao.Vilao;
 
 public class Cadastro {
 	
