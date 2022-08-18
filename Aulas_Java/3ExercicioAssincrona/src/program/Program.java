@@ -100,7 +100,7 @@ public class Program {
 			opcao = scan.next().charAt(0);
 		}
 		
-		System.out.println("Qual lista de veiculos cadastrados deseja verificar (c - carro| m - moto| a - ambas)");
+		System.out.println("Qual lista de veiculos cadastrados deseja verificar (c - carro| m - moto| a - ambas):");
 		char escolha = scan.next().charAt(0);
 		switch (Character.toLowerCase(escolha)) {
 		case 'c':
